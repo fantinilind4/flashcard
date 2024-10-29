@@ -1,5 +1,12 @@
+:root {
+    --texto-principal: #06ab00;
+    --texto-pergunta: #06ab00;
+    --texto-resposta: #06ab00;
+}
 body {
-    background-color: rgb(0, 0, 0);
+    background: url('slytherin.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
     font-family: Bai Jamjuree;
 }
 
@@ -10,29 +17,42 @@ body {
 
 .cartao {
     margin: 1rem 1rem;
-    background-color: rgb(255, 0, 0); 
     height: 20rem;
     flex-grow: 1;
-    flex-basis: calc(33% - 6rem);
-    color: rgb(0, 0, 0);
+    flex-basis: calc(33% - 6rem); 
 }
 
 .cartao__conteudo {
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    border: 1px solid var(--texto-principal);
+
     height: 100%;
 
 }
 
 .cartao__conteudo h3 {
-    background-color: rgb(255, 0, 0);
-    color: rgb(255, 255, 255);
+    color: var(--texto-principal);
+    border: 1px solid var(--texto-principal);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
     margin: 0.6rem;
     border-radius:0.6rem;
     font-size: 1vw;
+}
+
+.cartao__conteudo__pergunta p {
+  color: white;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 1em;
+}
+
+.cartao__conteudo__resposta p {
+   color: #06ab00;
+    font-weight: 900;
+    font-size: 30px;
+    padding-top: 3em;
 }
 
 footer {
